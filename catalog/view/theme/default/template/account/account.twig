@@ -1,8 +1,16 @@
 {{ header }}
+<style>
+  .section-header{
+    margin-bottom: 50px;
+  }
+  .grid__item{
+    padding-right: 15px;
+  }
+</style>
 <div id="account-account" class="container">
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
-    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {#<li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>#}
     {% endfor %}
   </ul>
   {% if success %}
@@ -16,8 +24,9 @@
     {% else %}
     {% set class = 'col-sm-12' %}
     {% endif %}
-    <div id="content" class="{{ class }}">{{ content_top }}
+    <div id="content" class="grid__item large--one-third push--large--one-third text-center">{{ content_top }}
       <h2>{{ text_my_account }}</h2>
+      <hr class="hr--small section-header"/>
       <ul class="list-unstyled">
         <li><a href="{{ edit }}">{{ text_edit }}</a></li>
         <li><a href="{{ password }}">{{ text_password }}</a></li>
@@ -53,10 +62,10 @@
         {% endif %}
       </ul>
       <h2>{{ text_my_newsletter }}</h2>
-      <ul class="list-unstyled">
+      <ul class="list-unstyled  section-header">
         <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
       </ul>
-      {{ content_bottom }}</div>
-    {{ column_right }}</div>
+      {#{{ content_bottom }}#}</div>
+    {#{{ column_right }}#}</div>
 </div>
 {{ footer }}

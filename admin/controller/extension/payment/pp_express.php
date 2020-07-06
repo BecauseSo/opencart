@@ -409,7 +409,6 @@ class ControllerExtensionPaymentPPExpress extends Controller {
 		curl_setopt($curl, CURLOPT_FRESH_CONNECT, 1);
 		curl_setopt($curl, CURLOPT_POST, true);
 		curl_setopt($curl, CURLOPT_POSTFIELDS, http_build_query($post_data));
-
 		$curl_response = curl_exec($curl);
 		$curl_response = json_decode($curl_response, true);
 

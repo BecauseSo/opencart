@@ -151,13 +151,13 @@ class ControllerExtensionThemeDefault extends Controller {
 		} else {
 			$data['theme_default_status'] = '';
 		}
-		
+
 		if (isset($this->request->post['theme_default_product_description_length'])) {
 			$data['theme_default_product_description_length'] = $this->request->post['theme_default_product_description_length'];
 		} elseif (isset($setting_info['theme_default_product_description_length'])) {
 			$data['theme_default_product_description_length'] = $setting_info['theme_default_product_description_length'];
 		} else {
-			$data['theme_default_product_description_length'] = 100;
+			$data['theme_default_product_description_length'] = 80;
 		}
 		
 		if (isset($this->request->post['theme_default_image_category_width'])) {

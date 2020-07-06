@@ -33,13 +33,13 @@ final class Loader {
 	public function controller($route, $data = array()) {
 		// Sanitize the call
 		$route = preg_replace('/[^a-zA-Z0-9_\/]/', '', (string)$route);
-		
+
 		// Keep the original trigger
 		$trigger = $route;
-		
+
 		// Trigger the pre events
 		$result = $this->registry->get('event')->trigger('controller/' . $trigger . '/before', array(&$route, &$data));
-		
+
 		// Make sure its only the last event that returns an output if required.
 		if ($result != null && !$result instanceof Exception) {
 			$output = $result;
@@ -47,10 +47,10 @@ final class Loader {
 			$action = new Action($route);
 			$output = $action->execute($this->registry, array(&$data));
 		}
-		
+
 		// Trigger the post events
 		$result = $this->registry->get('event')->trigger('controller/' . $trigger . '/after', array(&$route, &$data, &$output));
-		
+
 		if ($result && !$result instanceof Exception) {
 			$output = $result;
 		}

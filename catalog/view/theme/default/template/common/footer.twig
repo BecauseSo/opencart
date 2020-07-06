@@ -1,52 +1,81 @@
-<footer>
-  <div class="container">
-    <div class="row">
-      {% if informations %}
-      <div class="col-sm-3">
-        <h5>{{ text_information }}</h5>
-        <ul class="list-unstyled">
-         {% for information in informations %}
-          <li><a href="{{ information.href }}">{{ information.title }}</a></li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-      <div class="col-sm-3">
-        <h5>{{ text_service }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ contact }}">{{ text_contact }}</a></li>
-          <li><a href="{{ return }}">{{ text_return }}</a></li>
-          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h5>{{ text_extra }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
-          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
-          <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
-          <li><a href="{{ special }}">{{ text_special }}</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-3">
-        <h5>{{ text_account }}</h5>
-        <ul class="list-unstyled">
-          <li><a href="{{ account }}">{{ text_account }}</a></li>
-          <li><a href="{{ order }}">{{ text_order }}</a></li>
-          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
-          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
-        </ul>
-      </div>
-    </div>
-    <hr>
-    <p>{{ powered }}</p>
-  </div>
-</footer>
-{% for script in scripts %}
-<script src="{{ script }}" type="text/javascript"></script>
-{% endfor %}
-<!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
-//-->
-</body></html>
+<hr class="hr--large">
+
+<div id="shopify-section-footer" class="shopify-section">
+    <footer class="site-footer small--text-center" role="contentinfo" data-section-id="footer"
+            data-section-type="footer-section">
+        <div class="wrapper">
+            <div class="grid-uniform">
+                {% if informations %}
+                <div class="grid__item one-third small--one-whole">
+                    <ul class="no-bullets site-footer__linklist">
+                        {% for information in informations %}
+                        <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+               {# <div class="grid__item one-third small--one-whole">
+                    <ul class="no-bullets site-footer__linklist">
+                        <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+                        <li><a href="{{ return }}">{{ text_return }}</a></li>
+                        <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+                    </ul>
+                </div>
+                <div class="grid__item one-third small--one-whole">
+                    <ul class="no-bullets site-footer__linklist">
+                        <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
+                        <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
+                        <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
+                        <li><a href="{{ special }}">{{ text_special }}</a></li>
+                    </ul>
+                </div>#}
+                <div class="grid__item one-third small--one-whole">
+                    <ul class="no-bullets site-footer__linklist">
+                        <li><a href="{{ account }}">{{ text_account }}</a></li>
+                        <li><a href="{{ order }}">{{ text_order }}</a></li>
+                        <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+                        <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+                    </ul>
+                </div>
+                <div class="grid__item one-third small--one-whole large--text-right">
+                    {{ powered }}
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+</div>
+<script>
+    // Override default values of shop.strings for each template.
+    // Alternate product templates can change values of
+    // add to cart button, sold out, and unavailable states here.
+    theme.productStrings = {
+        addToCart: "Add to Cart",
+        soldOut: "Sold Out",
+        unavailable: "Unavailable"
+    }
+</script>
+<div id="SearchModal" class="mfp-hide">
+    <form action="/index.php" method="get" class="input-group search-bar search-bar--modal" role="search">
+        <input type="hidden" name="route" value="product/search">
+        <input type="search" name="q" value="" placeholder="Search our store" class="input-group-field"
+               aria-label="Search our store">
+  <span class="input-group-btn">
+    <button type="submit" class="btn icon-fallback-text">
+        <span class="icon icon-search" aria-hidden="true"></span>
+        <span class="fallback-text">Search</span>
+    </button>
+  </span>
+    </form>
+</div>
+<ul hidden>
+    <li id="a11y-refresh-page-message">Choosing a selection results in a full page refresh.</li>
+    <li id="a11y-selection-message">Press the space key then arrow keys to make a selection.</li>
+    <li id="a11y-slideshow-info">Use left/right arrows to navigate the slideshow or swipe left/right if using a mobile
+        device
+    </li>
+</ul>
+</body>
+</html>

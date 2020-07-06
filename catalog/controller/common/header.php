@@ -4,6 +4,8 @@ class ControllerCommonHeader extends Controller {
 		// Analytics
 		$this->load->model('setting/extension');
 
+		$this->document->setTitle($this->config->get('config_meta_title'));
+
 		$data['analytics'] = array();
 
 		$analytics = $this->model_setting_extension->getExtensions('analytics');
@@ -25,7 +27,6 @@ class ControllerCommonHeader extends Controller {
 		}
 
 		$data['title'] = $this->document->getTitle();
-
 		$data['base'] = $server;
 		$data['description'] = $this->document->getDescription();
 		$data['keywords'] = $this->document->getKeywords();

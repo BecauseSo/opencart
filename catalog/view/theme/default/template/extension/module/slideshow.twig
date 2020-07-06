@@ -1,26 +1,97 @@
-<div class="swiper-viewport">
-  <div id="slideshow{{ module }}" class="swiper-container">
-    <div class="swiper-wrapper"> {% for banner in banners %}
-      <div class="swiper-slide text-center">{% if banner.link %}<a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" /></a>{% else %}<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />{% endif %}</div>
-      {% endfor %} </div>
-  </div>
-  <div class="swiper-pagination slideshow{{ module }}"></div>
-  <div class="swiper-pager">
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  </div>
+<div id="shopify-section-slideshow"
+     class="shopify-section index-section index-slideshow-section shopify-section--full-width">
+    <div id="HeroWrapper-slideshow" data-section-id="slideshow" data-section-type="slideshow-section">
+        <div class="hero-slideshow hero"
+             id="Hero-slideshow"
+             aria-label="slideshow"
+             aria-describedby="a11y-slideshow-info"
+             tabindex="-1"
+             role="region"
+             data-autoplay="false"
+             data-autoplayspeed="5000"
+             data-adapt="false"
+             data-slide-nav-a11y="Load slide [slide_number]"
+             data-slide-nav-active-a11y="Slide [slide_number], current"
+             data-slide-index="{{ module }}">
+            {% for key,banner in banners %}
+              <style data-shopify>
+                #HeroWrapper-slideshow .hero--color-{{ key }} .hero__pause,
+                #HeroWrapper-slideshow .hero--color-{{ key }} .hero__pause .icon:before,
+                #HeroWrapper-slideshow .hero--color-{{ key }} .slick-prev .icon:before,
+                #HeroWrapper-slideshow .hero--color-{{ key }} .slick-next .icon:before,
+                #HeroWrapper-slideshow .hero--color-{{ key }} .slide--slideshow-{{ key }} {
+                    color: #ffffff;
+                }
+                #HeroWrapper-slideshow .hero--color-{{ key }} .slick-dots li a:before {
+                    background: transparent;
+                    border-color: #ffffff;
+                }
+                #HeroWrapper-slideshow .hero--color-{{ key }} li.slick-active a:before {
+                    background: #ffffff;
+                    border-color: transparent;
+                }
+                #HeroWrapper-slideshow .hero--color-{{ key }} .hero__pause .icon {
+                    fill: #ffffff;
+                }
+                #HeroWrapper-slideshow .slide--slideshow-{{ key }} .hero__text-wrap {
+                    text-align: center
+                }
+                .slide--slideshow-{{ key }} .slideshow__overlay:before {
+                    background-image: linear-gradient(to bottom,
+                    rgba(0, 0, 0, 0.25),
+                    rgba(0, 0, 0, 0.25) calc(100% - 150px),
+                    rgba(0, 0, 0, 0.38) calc(100% - 60px),
+                    rgba(0, 0, 0, 0.5));
+                }
+              </style>
+            <div class="hero__slide slide--slideshow-{{ key }}" data-hero-slide >
+                <noscript>
+                    <div class="hero__image-no-js"
+                         style="background-image: url('//cdn.shopifycdn.net/s/files/1/0424/8846/3512/files/welcome-to-my-business_2048x.jpg?v=1593523463');">
+                    </div>
+                </noscript>
+                <img class="hero__image hero__image--slideshow-{{ key }} lazyload fade-in"
+                     src="{{banner.image}}"
+                     data-src="{{banner.image}}"
+                     data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048, 4472]"
+                     data-aspectratio="1.4998169168802635"
+                     data-sizes="auto"
+                     data-parent-fit="cover"
+                     data-hero-image
+                     alt=""
+                     style="object-position: center center">
+
+                <div class="hero__text-wrap slideshow__overlay">
+                    <div class="hero__text-align wrapper">
+                        <div class="hero__text-content" data-hero-text-content>
+                            {#<p class="hero__subtitle">
+                                LIMIT DISCOUNTS
+                            </p>#}
+                            <h2 class="hero__title h1">
+                                {{ banner.title }}
+                            </h2><a href="{{banner.link }}" style="color: #ffffff; background-color: #1f2021"
+                                    class="btn hero__cta">
+                                SHOP NOW
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="hero__controls wrapper">
+                <ul>
+                    <li>
+                        <button class="slick-prev" aria-label="Previous slide" data-slide-previous>
+                            <span class="icon icon-slide-prev" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="slick-next" aria-label="Next slide" data-slide-next>
+                            <span class="icon icon-slide-next" aria-hidden="true"></span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hero__dots-wrapper" data-hero-dots-wrapper></div>
+            </div>
+        </div>
+    </div>
 </div>
-<script type="text/javascript"><!--
-$('#slideshow{{ module }}').swiper({
-	mode: 'horizontal',
-	slidesPerView: 1,
-	pagination: '.slideshow{{ module }}',
-	paginationClickable: true,
-	nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-    spaceBetween: 30,
-	autoplay: 2500,
-    autoplayDisableOnInteraction: true,
-	loop: true
-});
---></script>

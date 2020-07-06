@@ -99,7 +99,7 @@ class ControllerAccountLogin extends Controller {
 			'text' => $this->language->get('text_login'),
 			'href' => $this->url->link('account/login', '', true)
 		);
-
+		$data['breadcrumbs'] = [];
 		if (isset($this->session->data['error'])) {
 			$data['error_warning'] = $this->session->data['error'];
 

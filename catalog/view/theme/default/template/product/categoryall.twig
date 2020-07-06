@@ -1,0 +1,140 @@
+{{ header }}
+<div id="PageContainer" class="page-container">
+    <main class="main-content" role="main">
+
+        <div class="wrapper">
+
+            <!-- /templates/collection.liquid -->
+
+
+            <div id="shopify-section-collection-template" class="shopify-section"><!-- /templates/collection.liquid -->
+                <div id="CollectionSection" data-section-id="collection-template"
+                     data-section-type="collection-template" data-grid-type="collage">
+                    <header class="section-header text-center">
+                        <h1>Products</h1>
+                        <hr class="hr--small">
+                        <div class="grid--full collection-sorting"></div>
+                    </header>
+                    <div class="grid grid-collage">
+
+
+                        <div class="grid__item collage-grid__row">
+                            <div class="grid">
+
+                                {% if products %}
+
+                                {% for key,product in products %}
+                                <div class="grid__item grid-product grid__item--small one-whole medium--one-third large--one-third clearfix">
+                                    <div class="grid-product__wrapper">
+                                        <div class="grid-product__image-wrapper">
+                                            <a class="grid-product__image-link" href="{{ product.href }}"
+                                               data-image-link="">
+                                                <style>
+                                                    @media screen and (min-width: 591px) {
+                                                        .ProductImage-{{key}} {
+                                                            max-width: 190.0px;
+                                                            max-height: 190px;
+                                                        }
+
+                                                        #ProductImageWrapper-{{key}} {
+                                                            max-width: 190.0px;
+                                                        }
+                                                    }
+
+                                                    @media screen and (max-width: 590px) {
+                                                        .ProductImage-{{key}} {
+                                                            max-width: 295.0px;
+                                                        }
+
+                                                        #ProductImageWrapper-{{key}} {
+                                                            max-width: 295.0px;
+                                                        }
+                                                    }
+
+                                                </style>
+
+                                                <div id="ProductImageWrapper-{{key}}" class="product--wrapper">
+                                                    <div style="padding-top:100.0%;">
+                                                        <img class="product--image ProductImage-{{key}} lazyautosizes ls-is-cached lazyloaded"
+                                                             data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                                                             data-aspectratio="1.0" data-sizes="auto" alt=""
+                                                             data-image=""
+                                                             data-srcset="{{ product.thumb }}"
+                                                             sizes="190px"
+                                                             srcset="{{ product.thumb }}">
+                                                    </div>
+                                                </div>
+                                                <noscript>
+                                                    <img class="grid-product__image"
+                                                         src="{{ product.thumb }}"
+                                                         alt="">
+                                                </noscript>
+
+                                            </a>
+
+
+                                            {% if product.special %}
+                                                <div class="grid-product__on-sale">
+                                                    <p>Save<br>{{  product.price }}</p>
+                                                </div>
+                                            {% endif %}
+
+                                        </div>
+
+                                        <a href="{{ product.href }}" class="grid-product__meta">
+                                            <span class="grid-product__title">{{ product.name }}{{ product.description }}</span>
+      <span class="grid-product__price-wrap">
+        <span class="long-dash">—</span>
+        <span class="grid-product__price">
+
+            <span class="visually-hidden">Sale price</span>
+            {% if product.special %}
+                {{ product.special }}
+            {% else %}
+                {{ product.price }}
+            {% endif %}
+            <span class="icon-fallback-text">
+              <span class="icon icon-plus grid-product__price-min" aria-hidden="true"></span>
+              <span class="fallback-text">+</span>
+            </span>
+
+        </span></span>
+
+                                        </a>
+                                    </div>
+                                </div>
+                                {% endfor %}
+
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="grid__row-separator"></div>
+
+
+                    </div><!-- /snippets/pagination.liquid -->
+
+                    <div id="pagination">
+                        {% if pagination %}
+                            {{ pagination }}
+                        {% endif %}
+                    </div>
+                    {#<div class="pagination">#}
+                        {#<span class="page current">1</span> <span class="page"><a href="/collections/all?page=2"
+                                                                                  title="">2</a></span> <span
+                                class="next"><a href="/collections/all?page=2" title="">
+  <span class="icon-fallback-text">
+    <span class="icon icon-arrow-right" aria-hidden="true"></span>
+    <span class="fallback-text">Next</span>
+  </span>
+                            </a></span>#}
+
+
+                    {#</div>#}
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+</div>
+{{ footer }}

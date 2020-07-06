@@ -1,0 +1,81 @@
+2020-06-29 7:07:29 - PHP Warning:  Illegal string offset 'image' in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\extension\module\slideshow.php on line 18
+2020-06-29 7:07:29 - PHP Warning:  Illegal string offset 'image' in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\extension\module\slideshow.php on line 18
+2020-06-29 7:07:29 - PHP Warning:  Illegal string offset 'image' in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\extension\module\slideshow.php on line 18
+2020-06-29 7:07:29 - PHP Warning:  Illegal string offset 'image' in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\extension\module\slideshow.php on line 18
+2020-06-29 7:07:29 - PHP Warning:  Illegal string offset 'image' in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\extension\module\slideshow.php on line 18
+2020-06-29 7:07:29 - PHP Warning:  Illegal string offset 'image' in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\extension\module\slideshow.php on line 18
+2020-06-29 7:07:29 - PHP Warning:  Illegal string offset 'image' in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\extension\module\slideshow.php on line 18
+2020-06-29 7:07:29 - PHP Warning:  Illegal string offset 'image' in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\extension\module\slideshow.php on line 18
+2020-06-29 7:07:29 - PHP Warning:  Illegal string offset 'image' in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\extension\module\slideshow.php on line 18
+2020-07-02 7:15:20 - PHP Notice:  Undefined variable: categoryall_info in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 89
+2020-07-02 8:47:04 - PHP Warning:  Missing argument 2 for ModelToolImage::resize() in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\model\tool\image.php on line 3
+2020-07-02 8:47:04 - PHP Warning:  Missing argument 3 for ModelToolImage::resize() in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\model\tool\image.php on line 3
+2020-07-02 8:47:04 - PHP Notice:  Undefined variable: width in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\model\tool\image.php on line 11
+2020-07-02 8:47:04 - PHP Notice:  Undefined variable: height in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\model\tool\image.php on line 11
+2020-07-02 8:47:04 - PHP Notice:  Undefined variable: width in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\model\tool\image.php on line 32
+2020-07-02 8:47:04 - PHP Notice:  Undefined variable: width in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\model\tool\image.php on line 34
+2020-07-02 8:47:04 - PHP Notice:  Undefined variable: height in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\model\tool\image.php on line 34
+2020-07-02 8:47:04 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\system\library\image.php on line 169
+2020-07-02 8:47:04 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\system\library\image.php on line 177
+2020-07-02 8:47:04 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\system\library\image.php on line 180
+2020-07-02 8:47:04 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\system\library\image.php on line 182
+2020-07-02 8:47:17 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\system\library\image.php on line 169
+2020-07-02 8:47:17 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\system\library\image.php on line 177
+2020-07-02 8:47:17 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\system\library\image.php on line 180
+2020-07-02 8:47:17 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\system\library\image.php on line 182
+2020-07-08 3:28:09 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 60
+2020-07-08 3:28:50 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 59
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 146
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 165
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 171
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 177
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 183
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 189
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 196
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 202
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 209
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 215
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 242
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 242
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 242
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 242
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 242
+2020-07-08 3:42:22 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 268
+2020-07-08 3:42:22 - PHP Notice:  Undefined variable: category_info in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 276
+2020-07-08 3:42:22 - PHP Notice:  Undefined variable: category_info in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 286
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 170
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 176
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 182
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 188
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 194
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 201
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 207
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 214
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 220
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 247
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 247
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 247
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 247
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 247
+2020-07-08 3:44:44 - PHP Notice:  Undefined index: path in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 273
+2020-07-08 3:44:44 - PHP Notice:  Undefined variable: category_info in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 281
+2020-07-08 3:44:44 - PHP Notice:  Undefined variable: category_info in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\catalog\controller\product\categoryall.php on line 291
+2020-07-09 10:40:10 - PayPal Express debug (Call data): {"METHOD":"SetExpressCheckout","MAXAMT":903,"RETURNURL":"http:\/\/opencart.com\/index.php?route=extension\/payment\/pp_express\/checkoutReturn","CANCELURL":"http:\/\/opencart.com\/index.php?route=checkout\/checkout","REQCONFIRMSHIPPING":0,"NOSHIPPING":1,"LANDINGPAGE":"Login","LOGOIMG":null,"CHANNELTYPE":"Merchant","PAYMENTREQUEST_0_SHIPPINGAMT":"","PAYMENTREQUEST_0_CURRENCYCODE":"USD","PAYMENTREQUEST_0_PAYMENTACTION":"Sale","L_PAYMENTREQUEST_0_DESC0":false,"L_PAYMENTREQUEST_0_NAME0":"MacBook","L_PAYMENTREQUEST_0_NUMBER0":"Product 16","L_PAYMENTREQUEST_0_AMT0":500,"L_PAYMENTREQUEST_0_QTY0":"1","L_PAYMENTREQUEST_0_ITEMURL0":"http:\/\/opencart.com\/index.php?route=product\/product&amp;product_id=43","L_PAYMENTREQUEST_0_ITEMWEIGHTVALUE0":"0.00","L_PAYMENTREQUEST_0_ITEMWEIGHTUNIT0":"kg","L_PAYMENTREQUEST_0_NUMBER1":"tax","L_PAYMENTREQUEST_0_NAME1":"Eco Tax (-2.00)","L_PAYMENTREQUEST_0_AMT1":2,"L_PAYMENTREQUEST_0_QTY1":1,"L_PAYMENTREQUEST_0_NUMBER2":"tax","L_PAYMENTREQUEST_0_NAME2":"VAT (20%)","L_PAYMENTREQUEST_0_AMT2":100,"L_PAYMENTREQUEST_0_QTY2":1,"PAYMENTREQUEST_0_ITEMAMT":"602.00","PAYMENTREQUEST_0_AMT":"602.00"}
+2020-07-09 10:40:12 - PayPal Express debug (Result): "TOKEN=EC%2d2JR70555XY3290003&TIMESTAMP=2020%2d07%2d09T10%3a40%3a11Z&CORRELATIONID=926b5c38fde71&ACK=Success&VERSION=109%2e0&BUILD=54714318"
+2020-07-09 10:42:28 - PayPal Express debug (Call data): {"METHOD":"SetExpressCheckout","MAXAMT":903,"RETURNURL":"http:\/\/opencart.com\/index.php?route=extension\/payment\/pp_express\/checkoutReturn","CANCELURL":"http:\/\/opencart.com\/index.php?route=checkout\/checkout","REQCONFIRMSHIPPING":0,"NOSHIPPING":1,"LANDINGPAGE":"Login","LOGOIMG":null,"CHANNELTYPE":"Merchant","PAYMENTREQUEST_0_SHIPPINGAMT":"","PAYMENTREQUEST_0_CURRENCYCODE":"USD","PAYMENTREQUEST_0_PAYMENTACTION":"Sale","L_PAYMENTREQUEST_0_DESC0":false,"L_PAYMENTREQUEST_0_NAME0":"MacBook","L_PAYMENTREQUEST_0_NUMBER0":"Product 16","L_PAYMENTREQUEST_0_AMT0":500,"L_PAYMENTREQUEST_0_QTY0":"1","L_PAYMENTREQUEST_0_ITEMURL0":"http:\/\/opencart.com\/index.php?route=product\/product&amp;product_id=43","L_PAYMENTREQUEST_0_ITEMWEIGHTVALUE0":"0.00","L_PAYMENTREQUEST_0_ITEMWEIGHTUNIT0":"kg","L_PAYMENTREQUEST_0_NUMBER1":"tax","L_PAYMENTREQUEST_0_NAME1":"Eco Tax (-2.00)","L_PAYMENTREQUEST_0_AMT1":2,"L_PAYMENTREQUEST_0_QTY1":1,"L_PAYMENTREQUEST_0_NUMBER2":"tax","L_PAYMENTREQUEST_0_NAME2":"VAT (20%)","L_PAYMENTREQUEST_0_AMT2":100,"L_PAYMENTREQUEST_0_QTY2":1,"PAYMENTREQUEST_0_ITEMAMT":"602.00","PAYMENTREQUEST_0_AMT":"602.00"}
+2020-07-09 10:42:30 - PayPal Express debug (Result): "TOKEN=EC%2d8K541396VV912893D&TIMESTAMP=2020%2d07%2d09T10%3a42%3a29Z&CORRELATIONID=65dc7da849433&ACK=Success&VERSION=109%2e0&BUILD=54714318"
+2020-07-10 1:55:19 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in D:\phpStudy\PHPTutorial\WWW\a-lxj\opencart\upload\system\library\mail\mail.php on line 77

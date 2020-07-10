@@ -2,6 +2,7 @@
 // HTTP
 define('HTTP_SERVER', 'http://opencart.com/');
 
+
 // HTTPS
 define('HTTPS_SERVER', 'http://opencart.com/');
 

@@ -1,5 +1,6 @@
 <?php
 // Version
+//echo 123;exit;
 define('VERSION', '3.0.3.2');
 
 // Configuration

@@ -1,6 +1,7 @@
 <?php
 class ControllerCommonHeader extends Controller {
 	public function index() {
+
 		// Analytics
 		$this->load->model('setting/extension');
 
@@ -77,6 +78,8 @@ class ControllerCommonHeader extends Controller {
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
 		$data['menu'] = $this->load->controller('common/menu');
+
+		$data['cart_total'] = $this->cart->countProducts();
 
 		return $this->load->view('common/header', $data);
 	}

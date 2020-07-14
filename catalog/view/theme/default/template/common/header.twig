@@ -207,7 +207,11 @@
                       <span class="icon icon-cart" aria-hidden="true"></span>
                       <span class="fallback-text">Cart</span>
                     </span>
+                                            {% if cart_total %}
+                                            <span class="cart-link__bubble cart-link__bubble--visible">{{ cart_total }}</span>
+                                            {% else %}
                                             <span class="cart-link__bubble"></span>
+                                            {% endif %}
                                         </a>
                                     </li>
                                 </ul>
@@ -218,7 +222,13 @@
                   <span class="icon-fallback-text">
                     <span class="icon icon-cart" aria-hidden="true"></span>
                     <span class="fallback-text">Cart</span>
-                  </span><span class="cart-link__bubble"></span>
+                  </span>
+                                        {% if cart_total %}
+                                            <span class="cart-link__bubble cart-link__bubble--visible">{{ cart_total }}</span>
+                                        {% else %}
+                                            <span class="cart-link__bubble"></span>
+                                        {% endif %}
+                                        </span>
                                     </a>
                                 </div>
                             </div>

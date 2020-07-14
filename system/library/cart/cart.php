@@ -30,6 +30,10 @@ class Cart {
 		}
 	}
 
+	public function removeCartAll(){
+		$this->db->query("delete from " . DB_PREFIX . "cart WHERE api_id = '" . (isset($this->session->data['api_id']) ? (int)$this->session->data['api_id'] : 0) . "' AND customer_id = '" . (int)$this->customer->getId() . "' AND session_id = '" . $this->db->escape($this->session->getId()) . "'");
+	}
+
 	public function getProducts() {
 		$product_data = array();
 

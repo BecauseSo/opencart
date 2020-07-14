@@ -264,6 +264,13 @@ class ControllerCheckoutCart extends Controller {
 
 		$json = array();
 
+		if(isset($this->request->get['type'])){
+			if($this->request->get['type']=='buynow'){
+				//清空购物车
+				$this->cart->removeCartAll();
+			}
+		}
+
 		if (isset($this->request->post['product_id'])) {
 			$product_id = (int)$this->request->post['product_id'];
 		} else {

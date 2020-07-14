@@ -28,6 +28,10 @@ class ControllerCommonHeader extends Controller {
 		}
 
 		$data['title'] = $this->document->getTitle();
+		$data['facebook_pixel'] = $this->document->getFacebookPixel();
+		if(isset($data['facebook_pixel'])){
+			$data['facebook_pixel'][0] = explode(',',$data['facebook_pixel'][0]);
+		}
 		$data['base'] = $server;
 		$data['description'] = $this->document->getDescription();
 		$data['keywords'] = $this->document->getKeywords();
@@ -80,7 +84,6 @@ class ControllerCommonHeader extends Controller {
 		$data['menu'] = $this->load->controller('common/menu');
 
 		$data['cart_total'] = $this->cart->countProducts();
-
 		return $this->load->view('common/header', $data);
 	}
 }

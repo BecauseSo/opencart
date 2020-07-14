@@ -1,4 +1,12 @@
 {{ header }}
+<style>
+  .section-header{
+    margin-bottom: 50px;
+  }
+  .grid__item{
+    padding-right: 15px;
+  }
+</style>
 <div id="common-success" class="container">
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
@@ -16,15 +24,16 @@
     {% else %}
       {% set class = 'col-sm-12' %}
     {% endif %}
-    <div id="content" class="{{ class }}">{{ content_top }}
+    <div id="content" class="grid__item large--one-third push--large--one-third text-center">{{ content_top }}
       <h1>{{ heading_title }}</h1>
+      <hr class="hr--small section-header"/>
       <div class="text-center">
         <div id="qrcode">
         </div>
         <div class="alert alert-info" style="width: 256px; margin: 5px auto;">{{ text_qrcode_description }}</div>
       </div>
-      {{ content_bottom }}</div>
-    {{ column_right }}</div>
+      {#{{ content_bottom }}#}</div>
+    {#{{ column_right }}#}</div>
 </div>
 <script>
   var url = "{{ code_url }}";

@@ -3,6 +3,8 @@ class ControllerCheckoutSuccess extends Controller {
 	public function index() {
 		$this->load->language('checkout/success');
 
+		$this->document->setFacebookPixel([$this->config->get('config_facebook_pixel_code'),'Purchase']);
+
 		if (isset($this->session->data['order_id'])) {
 			$this->cart->clear();
 

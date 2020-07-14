@@ -14,12 +14,13 @@ class Document {
 	private $title;
 	private $description;
 	private $keywords;
+	private $facebook_pixel;
 	private $links = array();
 	private $styles = array();
 	private $scripts = array();
 
 	/**
-     * 
+     *
      *
      * @param	string	$title
      */
@@ -28,12 +29,25 @@ class Document {
 	}
 
 	/**
-     * 
-	 * 
+     *
 	 * @return	string
      */
 	public function getTitle() {
 		return $this->title;
+	}
+
+	/**
+     * @param	string	$title
+     */
+	public function setFacebookPixel($title) {
+		$this->facebook_pixel = $title;
+	}
+
+	/**
+	 * @return	string
+     */
+	public function getFacebookPixel() {
+		return $this->facebook_pixel;
 	}
 
 	/**

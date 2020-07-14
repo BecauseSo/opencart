@@ -411,6 +411,12 @@ class ControllerSettingSetting extends Controller {
 			$data['config_tax'] = $this->config->get('config_tax');
 		}
 
+		if (isset($this->request->post['config_facebook_pixel_code'])) {
+			$data['config_facebook_pixel_code'] = $this->request->post['config_facebook_pixel_code'];
+		} else {
+			$data['config_facebook_pixel_code'] = $this->config->get('config_facebook_pixel_code');
+		}
+
 		if (isset($this->request->post['config_tax_default'])) {
 			$data['config_tax_default'] = $this->request->post['config_tax_default'];
 		} else {

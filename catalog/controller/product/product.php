@@ -4,6 +4,7 @@ class ControllerProductProduct extends Controller {
 
 	public function index() {
 		$this->load->language('product/product');
+		$this->document->setFacebookPixel([$this->config->get('config_facebook_pixel_code')]);
 
 		$data['breadcrumbs'] = array();
 
@@ -281,11 +282,15 @@ class ControllerProductProduct extends Controller {
 				$data['price'] = false;
 			}
 
+
 			if ((float)$product_info['special']) {
 				$data['special'] = $this->currency->format($this->tax->calculate($product_info['special'], $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
 			} else {
 				$data['special'] = false;
 			}
+
+			$data['facebook_price'] = $data['special']?$data['special']:$data['price'];
+			$data['facebook_price'] = str_replace('$','',$data['facebook_price']);
 
 			if ($this->config->get('config_tax')) {
 				$data['tax'] = $this->currency->format((float)$product_info['special'] ? $product_info['special'] : $product_info['price'], $this->session->data['currency']);
@@ -445,6 +450,7 @@ class ControllerProductProduct extends Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
+
 			$this->response->setOutput($this->load->view('product/product', $data));
 		} else {
 			$url = '';

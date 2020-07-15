@@ -240,8 +240,8 @@
                                                     {% for option in options %}
                                                         {% if option.type == 'select' %}
                                                             <div class="form-group{% if option.required %} required {% endif %}">
-                                                                {#<label class="control-label" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>#}
-                                                                <select name="option[{{ option.product_option_id }}]" id="input-option{{ option.product_option_id }}" class="input-full">
+                                                                <label class="control-label  radio-title-lable" for="input-option{{ option.product_option_id }}">{{ option.name }}</label>
+                                                                <select name="option[{{ option.product_option_id }}]" style="width: 90%;border: 1px solid #000000;margin-bottom: 10px" id="input-option{{ option.product_option_id }}" class="input-full">
                                                                     <option value="">{{ text_select }}</option>
                                                                     {% for option_value in option.product_option_value %}
                                                                         <option value="{{ option_value.product_option_value_id }}">{{ option_value.name }}

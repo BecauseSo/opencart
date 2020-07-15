@@ -8510,14 +8510,19 @@ label.error {
 .cart-link__bubble--visible {
     display: block;
     position: absolute;
-    top: 14px;
-    right: 0px;
-    width: 15px;
-    height: 15px;
-    background-color: #a56600;
-    border-radius: 50%;
-    font-size: 0.3rem;
     padding: 0px 2px 0px 1px;
+    top: 18px;
+    right: 4px;
+    width: 14px;
+    height: 14px;
+    background-color: #FF442E;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 0.35em;
+    text-align: center;
+    line-height: 14px;
+    padding-left: 3px;
+
 }
 
 @media screen and (max-width: 768px) {

@@ -8,7 +8,7 @@ class ControllerCheckoutCheckout extends Controller {
 
 		// Validate minimum quantity requirements.
 		$products = $this->cart->getProducts();
-		$this->document->setFacebookPixel([$this->config->get('config_facebook_pixel_code')]);
+		$this->document->setFacebookPixel([$this->config->get('config_facebook_pixel_code'),'InitiateCheckout']);
 
 		$data['products'] = [
 			'ids'=>implode('","',array_column($products,'cart_id')),

@@ -86,11 +86,10 @@
                                         </div>
 
                                         <a href="{{ product.href }}" class="grid-product__meta">
-                                            <span class="grid-product__title">{{ product.name }}{{ product.description }}</span>
+                                            <span class="grid-product__title">{{ product.name }}</span>
       <span class="grid-product__price-wrap">
         <span class="long-dash">—</span>
         <span class="grid-product__price">
-
             <span class="visually-hidden">Sale price</span>
             {% if product.special %}
                 {{ product.special }}
@@ -101,8 +100,8 @@
               <span class="icon icon-plus grid-product__price-min" aria-hidden="true"></span>
               <span class="fallback-text">+</span>
             </span>
-
-        </span></span>
+        </span>
+      </span>
 
                                         </a>
                                     </div>

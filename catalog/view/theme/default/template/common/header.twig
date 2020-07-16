@@ -168,9 +168,11 @@
                         color: #ffffff;
                     }
                 </style>
+                {% if config_html_top %}
                 <div class="announcement-bar">
-                    <p class="announcement-bar__message">Enjoy Free Express Shipping on orders over $40</p>
+                    <p class="announcement-bar__message">{{ config_html_top }}</p>
                 </div>
+                {% endif %}
                 <header class="site-header" role="banner" data-transparent-header="true">
                     <div class="wrapper">
                         <div class="grid--full grid--table">

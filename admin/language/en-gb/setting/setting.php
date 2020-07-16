@@ -38,6 +38,7 @@ $_['entry_meta_title']               = 'Meta Title';
 $_['entry_meta_description']         = 'Meta Tag Description';
 $_['entry_meta_keyword']             = 'Meta Tag Keywords';
 $_['entry_facebook_pixel']          = 'Facebook Pixel Code';
+$_['entry_html_top']                 = 'Html Top';
 $_['entry_layout']                   = 'Default Layout';
 $_['entry_theme']                    = 'Theme';
 $_['entry_name']                     = 'Store Name';

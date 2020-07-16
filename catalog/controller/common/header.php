@@ -40,7 +40,7 @@ class ControllerCommonHeader extends Controller {
 		$data['scripts'] = $this->document->getScripts('header');
 		$data['lang'] = $this->language->get('code');
 		$data['direction'] = $this->language->get('direction');
-
+		$data['config_html_top']  = $this->config->get('config_html_top');
 		$data['name'] = $this->config->get('config_name');
 
 		if (is_file(DIR_IMAGE . $this->config->get('config_logo'))) {

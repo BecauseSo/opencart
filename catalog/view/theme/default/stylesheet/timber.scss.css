@@ -4759,41 +4759,6 @@ label.error {
 }
 
 @font-face {
-    font-family: Montserrat;
-    font-weight: 600;
-    font-style: normal;
-    src: url("https://fonts.shopifycdn.com/montserrat/montserrat_n6.7a3c341961dc23aaabcc116124b80f2a7abec1a2.woff2?h1=Z2Zzd3F0Zy5jb20&hmac=1ab93c47b3acfc1d333dbdc93c3563f4ee49dd4ed00931f98ef0da21866959a4") format("woff2"), url("https://fonts.shopifycdn.com/montserrat/montserrat_n6.2c97c1a692c63ad09ab0635cb73b1939c5f417c0.woff?h1=Z2Zzd3F0Zy5jb20&hmac=92697ce4a678b17c6f2385407aeb33fdef5298c1182273491d77bb5586403600") format("woff")
-}
-
-@font-face {
-    font-family: Arapey;
-    font-weight: 400;
-    font-style: normal;
-    src: url("https://fonts.shopifycdn.com/arapey/arapey_n4.2d2866546ce54f39e3baf69f5d944e54b2e0771b.woff2?h1=Z2Zzd3F0Zy5jb20&hmac=f156b80ff48d0b536752c6aa578ec555a05c6ae3cb2dd5dfb20426348c9d35f8") format("woff2"), url("https://fonts.shopifycdn.com/arapey/arapey_n4.a5bf746bd7b4646dec7a42e0f36c7afe1b3785db.woff?h1=Z2Zzd3F0Zy5jb20&hmac=bd6e23f34b8acc7ff5b6d807fb0e1b41b8022127e945cea6fb6bd04db092c66e") format("woff")
-}
-
-@font-face {
-    font-family: "Old Standard TT";
-    font-weight: 400;
-    font-style: normal;
-    src: url("https://fonts.shopifycdn.com/old_standard_tt/oldstandardtt_n4.ee0951721b469828e44903ad5ff5815def33217a.woff2?h1=Z2Zzd3F0Zy5jb20&hmac=eff7cc0f2c45ee4acfb3b1c59c88bd4975b05669a8e08fddfc5fa046c5bd1e76") format("woff2"), url("https://fonts.shopifycdn.com/old_standard_tt/oldstandardtt_n4.481b4779e20f0c9f07603272fe7c673a29ed154f.woff?h1=Z2Zzd3F0Zy5jb20&hmac=10f76addbf6b855cbc938de6734fbb29c19ffbbbe7e27c7f715f08cc3dd03b6a") format("woff")
-}
-
-@font-face {
-    font-family: Arapey;
-    font-weight: 400;
-    font-style: italic;
-    src: url("https://fonts.shopifycdn.com/arapey/arapey_i4.76b9c74110c86df9446495f3b98d8ff62e62229e.woff2?h1=Z2Zzd3F0Zy5jb20&hmac=5ed1e556e5896500d70d0001f7fe49d766dcc4b5f3990801eba56450f630e79b") format("woff2"), url("https://fonts.shopifycdn.com/arapey/arapey_i4.54a950529ca14266fc22b37574a97a78f656c7bb.woff?h1=Z2Zzd3F0Zy5jb20&hmac=aa5d0271e2d6755cde65bc6574e9aae5593232efd0d8c1801097e740598a4e50") format("woff")
-}
-
-@font-face {
-    font-family: Montserrat;
-    font-weight: 900;
-    font-style: normal;
-    src: url("https://fonts.shopifycdn.com/montserrat/montserrat_n9.ddaed62de62f3d3d87e64f4d0463dca05fc9c8e4.woff2?h1=Z2Zzd3F0Zy5jb20&hmac=ed029a94bf5ef481bce4eadeb19057004bb4e6ec8a5f9f3b1f24f602ac1b256b") format("woff2"), url("https://fonts.shopifycdn.com/montserrat/montserrat_n9.85cc5f32e331fc9b3a109639b08869c64782e161.woff?h1=Z2Zzd3F0Zy5jb20&hmac=ef4baddf35ccc47fe8e1083fd4046a1912bff436fcca322354ff0ea1bced08f0") format("woff")
-}
-
-@font-face {
     font-family: 'icons';
     src: url("//cdn.shopifycdn.net/s/files/1/0424/8846/3512/t/2/assets/icons.eot?v=11298153234806265256");
     src: url("//cdn.shopifycdn.net/s/files/1/0424/8846/3512/t/2/assets/icons.eot?v=11298153234806265256#iefix") format("embedded-opentype"), url("//cdn.shopifycdn.net/s/files/1/0424/8846/3512/t/2/assets/icons.woff?v=2408938297684835138") format("woff"), url("//cdn.shopifycdn.net/s/files/1/0424/8846/3512/t/2/assets/icons.ttf?v=17785143920645075297") format("truetype"), url("//cdn.shopifycdn.net/s/files/1/0424/8846/3512/t/2/assets/icons.svg?v=18275316767451022369#timber-icons") format("svg");

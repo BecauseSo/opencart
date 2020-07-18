@@ -6,6 +6,9 @@ class ControllerProductProduct extends Controller {
 		$this->load->language('product/product');
 		$this->document->setFacebookPixel([$this->config->get('config_facebook_pixel_code')]);
 
+		$this->load->model('tool/traffic');
+		$this->model_tool_traffic->statisticsTotal();
+
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(

@@ -4,6 +4,8 @@ class ControllerCheckoutSuccess extends Controller {
 		$this->load->language('checkout/success');
 
 		$this->document->setFacebookPixel([$this->config->get('config_facebook_pixel_code'),'Purchase']);
+		$this->load->model('tool/traffic');
+		$this->model_tool_traffic->statisticsTotal('success');
 
 		if (isset($this->session->data['order_id'])) {
 			$this->cart->clear();

@@ -6,6 +6,9 @@ class ControllerCheckoutCart extends Controller {
 		$this->document->setTitle($this->language->get('heading_title'));
 		$this->document->setFacebookPixel([$this->config->get('config_facebook_pixel_code'),'AddToCart']);
 
+		$this->load->model('tool/traffic');
+		$this->model_tool_traffic->statisticsTotal('cart');
+
 		$data['breadcrumbs'] = array();
 
 		$data['breadcrumbs'][] = array(
